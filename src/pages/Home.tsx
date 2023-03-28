@@ -27,13 +27,16 @@ export const Home: FC = () => {
         <h2>This is a React project ot test</h2>
       </Card>
       <Card>
-        <h4>Microsoft Clarity</h4>
+        <h4>Simple page with /tournament url</h4>
         <Link to="/tournament">
           <Button>Tournament</Button>
         </Link>
       </Card>
       <Card>
-        <h5>But maybe another tool</h5>
+        <h5>Page with param in url</h5>
+        <Link to="/param">
+          <Button>Pagram</Button>
+        </Link>
       </Card>
       <Card>
         <h5>But maybe another tool</h5>

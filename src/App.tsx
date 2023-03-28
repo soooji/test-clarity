@@ -2,6 +2,7 @@ import "./styles.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Tournament } from "./pages/Tournament";
+import { Param } from "./pages/Param";
 
 const router = createBrowserRouter([
   {
@@ -11,6 +12,10 @@ const router = createBrowserRouter([
   {
     path: "/tournament",
     element: <Tournament />,
+  },
+  {
+    path: "/param",
+    element: <Param />,
   },
 ]);
 
