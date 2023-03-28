@@ -1,10 +1,19 @@
 import "./styles.css";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Tournament } from "./pages/Tournament";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/tournament",
+    element: <Tournament />,
+  },
+]);
 
 export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox - test</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
